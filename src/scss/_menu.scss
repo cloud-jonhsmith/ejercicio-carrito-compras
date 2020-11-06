@@ -1,0 +1,19 @@
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgb(24, 115, 175);
+    height: 75px;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-right: 20px;
+    }
+}

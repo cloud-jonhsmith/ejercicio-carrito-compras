@@ -1,0 +1,14 @@
+.section-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+    .section-page-product {
+        width: 60%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .section-page-hamper {
+        width: 40%;
+    }
+}
