@@ -1,3 +1,10 @@
-@import './menu.scss';
+@import './header-menu.scss';
 @import './section-page.scss';
 @import './article.scss';
+@import './article-product.scss';
+@import './btn-addHamper.scss';
+
+.app {
+    display: flex;
+    flex-direction: column;
+}

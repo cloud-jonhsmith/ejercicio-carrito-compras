@@ -6,9 +6,14 @@
     .section-page-product {
         width: 60%;
         display: flex;
+        //flex-direction: row;
+        //flex-wrap: wrap;
         flex-flow: row wrap;
+        justify-content: space-around;
+        border: 1px solid blue;
     }
     .section-page-hamper {
         width: 40%;
+        border: 1px solid brown;
     }
 }

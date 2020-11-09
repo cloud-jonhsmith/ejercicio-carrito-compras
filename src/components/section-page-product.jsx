@@ -3,23 +3,25 @@ import ArticleProduct from './article-product';
 
 class SectionPageProduct extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            lado: 'izquierda'
-        }
-    }
-
     render() {
+        const rows = [];
+        let lastNameProduct = null;
+
+        this.props.products.forEach(product => {
+            if (product.nameProduct !== lastNameProduct) {
+                rows.push(
+                    <ArticleProduct product={product} />
+                );
+            };
+            console.log(product.nameProduct);
+            console.log(product.stock);
+            lastNameProduct = product.nameProduct;
+        });
+
         return (
-            <div className="section-page-product">
-                <ArticleProduct />
-                <ArticleProduct />
-                <ArticleProduct />
-                <ArticleProduct />
-                <ArticleProduct />
-                <ArticleProduct />
-            </div>
+            <section className="section-page-product">
+                {rows}
+            </section>
         )
     }
 }

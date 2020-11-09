@@ -1,35 +1,24 @@
 import React from 'react';
 
-class ArticleProdcut extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            nameProd: '',
-            codigoProd: '',
-            descProd: '',
-            price: '',
-            stock: '',
-        }
+class ArticleProduct extends React.Component {
+    addHamper() {
+        alert("Hola ArticleProduct");
     }
-
-    hola(){
-        alert("Hola");
-    }
-
     render() {
+        const product = this.props.product;
+
         return (
-            <article className="article">
-                <img src="" alt=""/>
-                <p>Nombre del producto</p>
-                <p>Código del producto</p>
-                <p>Descripción</p>
-                <p>Precio</p>
-                <p>Stock</p>
-                <button onClick={this.hola}>Añadir</button>
+            <article className="article-product">
+                <img src={product.url} alt=""/>
+                <p>{product.nameProduct}</p>
+                <p>{product.codeProduct}</p>
+                <p>{product.descProduct}</p>
+                <p>{product.proce}</p>
+                <p>{product.stock}</p>
+                <button className="btn-addHamper" onClick={this.addHamper}> Añadir</button>
             </article>
-        )
+        );
     }
 }
 
-export default ArticleProdcut;
+export default ArticleProduct;
