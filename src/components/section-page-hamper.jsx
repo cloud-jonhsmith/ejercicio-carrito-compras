@@ -1,18 +1,11 @@
 import React from 'react';
 
 class SectionPageHamper extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            lado: 'derecha'
-        }
-    }
-
     render() {
         return (
-            <div className="section-page-hamper">
-                <p>Page {this.state.lado}</p>
+            <div id="section-page-hamper" className="section-page-hamper">
+                <p>Page {6}</p>
+                <p>Hola {7}</p>
             </div>
         )
     }

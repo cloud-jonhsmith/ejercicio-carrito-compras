@@ -11,9 +11,28 @@
         flex-flow: row wrap;
         justify-content: space-around;
         border: 1px solid blue;
+        margin: 0 100px 0 100px;
     }
     .section-page-hamper {
         width: 40%;
+        display: flex;
+        flex-flow: row wrap;
         border: 1px solid brown;
+        margin: 0 100px 0 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-page {
+        flex-direction: column;
+        .section-page-product {
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+        }
+        .section-page-hamper {
+            width: 100%;
+            justify-content: center;
+        }
     }
 }

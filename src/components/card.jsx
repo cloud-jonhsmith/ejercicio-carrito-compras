@@ -1,14 +1,15 @@
 import React from 'react';
+import SectionPageHamper from './section-page-hamper';
 
-class ArticleProduct extends React.Component {
+class Card extends React.Component {
     addHamper() {
-        alert("Hola ArticleProduct");
+        alert('Hola')
     }
     render() {
         const product = this.props.product;
 
         return (
-            <article className="article-product">
+            <article className="card">
                 <img src={product.url} alt=""/>
                 <p>{product.nameProduct}</p>
                 <p>{product.codeProduct}</p>
@@ -21,4 +22,4 @@ class ArticleProduct extends React.Component {
     }
 }
 
-export default ArticleProduct;
+export default Card;

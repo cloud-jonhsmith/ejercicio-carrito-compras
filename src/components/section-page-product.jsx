@@ -1,8 +1,14 @@
 import React from 'react';
-import ArticleProduct from './article-product';
+import Card from './card';
 
 class SectionPageProduct extends React.Component {
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            cantidadProduct: this.cantidadProduct,
+            isStock: this.isStock
+        }
+    }
     render() {
         const rows = [];
         let lastNameProduct = null;
@@ -10,11 +16,12 @@ class SectionPageProduct extends React.Component {
         this.props.products.forEach(product => {
             if (product.nameProduct !== lastNameProduct) {
                 rows.push(
-                    <ArticleProduct product={product} />
+                    <Card 
+                    product={product} 
+                    cantidadProduct={this.cantidadProduct}
+                    isStock={this.isStock} />
                 );
             };
-            console.log(product.nameProduct);
-            console.log(product.stock);
             lastNameProduct = product.nameProduct;
         });
 

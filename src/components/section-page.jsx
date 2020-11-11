@@ -3,17 +3,19 @@ import SectionPageProduct from './section-page-product';
 import SectionPageHamper from './section-page-hamper';
 
 class SectionPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            products: this.props.products
+        }
+    }
     render() {
-        const rowsProduct = [];
-        this.props.products.forEach(product => {
-            rowsProduct.push(
-                product
-            );
-        });
         return (
             <div className="section-page">
-                <SectionPageProduct products={rowsProduct} />
-                <SectionPageHamper />
+                <SectionPageProduct
+                    products={this.state.products} />
+                <SectionPageHamper
+                    products={this.state.products} />
             </div>
         );
     };
