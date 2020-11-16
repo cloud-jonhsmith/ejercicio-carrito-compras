@@ -1,0 +1,40 @@
+.menu-hamper {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    li {
+        //margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.item-hamper {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: 1px solid green;
+    width: 80px;
+    /* li {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        //margin-left: 10px;
+        //margin-right: 10px;
+        border: 1px solid green;
+    } */
+
+    i {
+        margin: auto;
+        padding: 5px;
+        border: 1px solid orange;
+    }
+}
+
+@media (max-width: 1700px) {
+    .itemHamper {
+        li {
+            width: 85px;
+        }
+    }
+}
