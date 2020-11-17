@@ -2,7 +2,7 @@ import React from 'react';
 
 class SectionPageHamper extends React.Component {
     render() {
-        const { productsArray } = this.props;
+        const { productsArray, minusCount, plusCount, deleteProductHamper } = this.props;
         return (
             <div id="section-page-hamper" className="section-page-hamper">
                 <div id="menuHamper" className="menuHamper">
@@ -22,16 +22,19 @@ class SectionPageHamper extends React.Component {
                                     <li className='item-hamper'>{obj.codeProduct}</li>
                                     <li className='item-hamper'>{obj.nameProduct}</li>
                                     <li className='item-hamper'>
-                                        <i class="fas fa-minus-circle"></i>
+                                        <i className="fas fa-minus-circle" onClick={ () => minusCount(obj)}></i>
                                         {obj.count}
-                                        <i class="fas fa-plus-circle"></i>
+                                        <i className="fas fa-plus-circle" onClick={ () => plusCount(obj)}></i>
                                     </li>
                                     <li className='item-hamper'>{obj.price}</li>
                                     <li className='item-hamper'>
-                                        <i class="fas fa-trash"></i>
+                                        <i className="fas fa-trash" onClick={ () => deleteProductHamper(obj)}></i>
                                     </li>
                                 </ul>
                             )
+                        }
+                        {
+                            <div>Total: {0}</div>
                         }
                         </>
                     }                   

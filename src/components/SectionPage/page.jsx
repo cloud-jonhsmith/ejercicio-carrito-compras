@@ -5,7 +5,13 @@ import SectionPageProduct from './section-page-product';
 const Page = (props) => (
     <>
         <SectionPageProduct addProductsHamper={props.addProductsHamper} />
-        <SectionPageHamper productsArray={props.productsArray} />
+        <SectionPageHamper
+            productsArray={props.productsArray}
+            minusCount={props.minusCount}
+            plusCount={props.plusCount}
+            deleteProductHamper={props.deleteProductHamper}
+            total={props.total}
+        />
     </>
 )
 
