@@ -34,7 +34,7 @@ class SectionPageHamper extends React.Component {
                             )
                         }
                         {
-                            <div>Total: {0}</div>
+                            <div>Total: {this.props.total}</div>
                         }
                         </>
                     }                   
