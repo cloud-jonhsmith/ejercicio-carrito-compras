@@ -1,5 +1,4 @@
 import React from 'react';
-import AddHamper from './add-hamper';
 
 const Card = (props) => {
 
