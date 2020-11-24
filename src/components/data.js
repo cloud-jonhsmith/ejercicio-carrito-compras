@@ -1,3 +1,10 @@
+import monitor1 from '../img/monitor1.jpg';
+import monitor2 from '../img/monitor2.jpg';
+import monitor3 from '../img/monitor3.jpg';
+import monitor4 from '../img/monitor4.jpg';
+import monitor5 from '../img/monitor5.jpg';
+import monitor6 from '../img/monitor6.jpg';
+
 export const PRODUCTS = [
     {
         nameProduct: 'Monitor LED LG',
@@ -5,7 +12,7 @@ export const PRODUCTS = [
         descProduct: '21\'',
         price: '$200.00',
         stock: 12,
-        url: 'https://loremflickr.com/200/200/technology,monitor',
+        url: monitor1,
         id: 1,
         count: 1
     },
@@ -15,7 +22,7 @@ export const PRODUCTS = [
         descProduct: '27\'',
         price: '$450.00',
         stock: 10,
-        url: 'https://loremflickr.com/200/201/technology,monitor',
+        url: monitor2,
         id: 2,
         count: 1
     },
@@ -25,7 +32,7 @@ export const PRODUCTS = [
         descProduct: '24\'',
         price: '$400.00',
         stock: 6,
-        url: 'https://loremflickr.com/200/202/technology,monitor',
+        url: monitor3,
         id: 3,
         count: 1
     },
@@ -35,7 +42,7 @@ export const PRODUCTS = [
         descProduct: '32\'',
         price: '$600.00',
         stock: 3,
-        url: 'https://loremflickr.com/200/203/technology,monitor',
+        url: monitor4,
         id: 4,
         count: 1
     },
@@ -45,7 +52,7 @@ export const PRODUCTS = [
         descProduct: '27\'',
         price: '$500.00',
         stock: 4,
-        url: 'https://loremflickr.com/200/204/technology,monitor',
+        url: monitor5,
         id: 5,
         count: 1
     },
@@ -54,8 +61,8 @@ export const PRODUCTS = [
         codeProduct: '66666',
         descProduct: '32\'',
         price: '$700.00',
-        stock: 1,
-        url: 'https://loremflickr.com/200/205/technology,monitor',
+        stock: 9,
+        url: monitor6,
         id: 6,
         count: 1
     },

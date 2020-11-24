@@ -7,11 +7,13 @@ const Card = (props) => {
     return (
         <article className="card">
             <img src={product.url} alt=""/>
-            <p>{product.nameProduct}</p>
-            <p>{product.codeProduct}</p>
-            <p>{product.descProduct}</p>
+            <p>{product.nameProduct} {product.descProduct}</p>
+            <br/>
+            <p><b>Código:</b> {product.codeProduct}</p>
+            <p><b>Stock:</b> {product.stock}</p>
+            <br/>
             <p>{product.price}</p>
-            <p>{product.stock}</p>
+            <br/>
             <button className="btn-addHamper" onClick={ () => addProductsHamper(product)}>Añadir</button>
         </article>
     )

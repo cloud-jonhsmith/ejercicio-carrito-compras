@@ -1,11 +1,49 @@
-@import './header-menu.scss';
-@import './section-page.scss';
-@import './article.scss';
-@import './card.scss';
-@import './btn-addHamper.scss';
-@import './menuHamper.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.app {
-    display: flex;
-    flex-direction: column;
+.bolt-letter {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.icon-size {
+    font-size: 20px;
+}
+
+.color-item-letter-gray {
+    color: #424447;
+}
+
+.color-item-letter-black {
+    color: rgb(24, 24, 24);
+}
+
+
+// RESPONSIVE
+
+// Móviles en horizontal o tablets en vertical
+
+@media (min-width: 480px) { 
+
+}
+
+// Tablets en horizontal
+
+@media (min-width: 768px) { 
+
+}
+
+// Tablets en horizonal y escritorios normales
+
+@media (min-width: 1024px) { 
+
+}
+
+// Escritorios muy anchos
+
+@media (min-width: 1200px) { 
+
 }

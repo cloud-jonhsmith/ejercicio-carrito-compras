@@ -2,46 +2,72 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    padding: 0;
-    li {
-        //margin-left: 20px;
-        margin-right: 20px;
+    height: 40px;
+    background: rgb(192, 186, 186);
+    .item-hamper-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+    }
+    :nth-child(1) {
+        width: 15%;
+    }
+    :nth-child(5) {
+        width: 10%;
     }
 }
 
-.item-hamper {
+.list-product-hamper {
     display: flex;
+    height: 50px;
     align-items: center;
     list-style: none;
-    border: 1px solid green;
-    width: 80px;
-    /* li {
+    margin: 0 0 10px 0;
+    .item-hamper-product {
         display: flex;
+        justify-content: center;
         align-items: center;
-        width: 100px;
-        //margin-left: 10px;
-        //margin-right: 10px;
-        border: 1px solid green;
-    } */
-
-    i {
-        margin: auto;
-        padding: 5px;
-        border: 1px solid orange;
+        width: 25%;
+        height: 60px;
+    }
+    :nth-child(1), :nth-child(2) {
+        justify-content: flex-start;
+    }
+    :nth-child(1) {
+        width: 15%;
+    }
+    :nth-child(5) {
+        width: 10%;
+    }
+    // Para centrar verticalmente el número de cantidad
+    :nth-child(3) {
+        justify-content: space-around;
     }
 }
 
-@media (max-width: 414px) {
-    .menuHamper {
-        li:nth-child(1),li:last-child {
-            width: 50px;
-        }
-        li:nth-child(4){
-            width: 60px;
-        }
-        li {
-            //margin-left: 20px;
-            margin-right: 5px;
-        }
-    }
+// RESPONSIVE
+
+// Móviles en horizontal o tablets en vertical
+
+@media (min-width: 480px) { 
+
+}
+
+// Tablets en horizontal
+
+@media (min-width: 768px) { 
+
+}
+
+// Tablets en horizonal y escritorios normales
+
+@media (min-width: 1024px) { 
+
+}
+
+// Escritorios muy anchos
+
+@media (min-width: 1200px) { 
+
 }
