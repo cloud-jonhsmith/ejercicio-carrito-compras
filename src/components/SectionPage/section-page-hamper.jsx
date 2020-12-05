@@ -6,16 +6,16 @@ class SectionPageHamper extends React.Component {
         return (
             <>
                 <div id="section-page-hamper" className="section-page-hamper">
+                    <h2>CARRITO DE COMPRAS</h2>
+                    <ul className='menu-hamper'>
+                        <li className='item-hamper-menu bolt-letter'>Código</li>
+                        <li className='item-hamper-menu bolt-letter'>Producto</li>
+                        <li className='item-hamper-menu bolt-letter'>Cantidad</li>
+                        <li className='item-hamper-menu bolt-letter'>Precio</li>
+                        <li className='item-hamper-menu'>#</li>
+                    </ul>
                     {productsArray.length > 0 &&
-                        <>
-                        <h2>CARRITO DE COMPRAS</h2>
-                        <ul className='menu-hamper'>
-                            <li className='item-hamper-menu bolt-letter'>Código</li>
-                            <li className='item-hamper-menu bolt-letter'>Producto</li>
-                            <li className='item-hamper-menu bolt-letter'>Cantidad</li>
-                            <li className='item-hamper-menu bolt-letter'>Precio</li>
-                            <li className='item-hamper-menu'>#</li>
-                        </ul>
+                        <>                        
                         {
                             productsArray.map((obj, index) =>
                                 <ul key={index} className='list-product-hamper'>
