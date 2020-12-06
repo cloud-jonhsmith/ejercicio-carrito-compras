@@ -33,11 +33,11 @@ class SectionPageHamper extends React.Component {
                                 </ul>
                             )
                         }
-                        {
-                            <div className='total-price'><p>Total: {this.props.total}</p></div>
-                        }
                         </>
-                    }                   
+                    }
+                    {
+                        <div className='total-price'><p>Total: {this.props.total}</p></div>
+                    }                 
                 </div>
             </>
         )

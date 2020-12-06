@@ -1,8 +1,9 @@
 import React from 'react';
+import { headerMenu, itemHeaderMenu } from './styled.ts';
 
 const HeaderMenu = () => (
-    <div className="header-menu">
-        <a href="#">ONLINE SHOP</a>
+    <div style={headerMenu}>
+        <a style={itemHeaderMenu} href="#">ONLINE SHOP</a>
     </div>
 );
 

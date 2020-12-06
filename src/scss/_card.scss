@@ -1,16 +1,25 @@
 .card {
     max-width: 300px;
-    color: rgb(49, 47, 43);
+    color: rgb(95, 92, 85);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid rgb(128, 121, 121);
+    border: 2px solid rgb(128, 121, 121);
+    border-radius: 25px;
+    background: white;
+
+    :nth-child(2), :nth-child(3) {
+        color: #1661a3;
+        font-size: 20px;
+        align-self: center;
+    }
     img {
         align-self: center;
         width: 90%;
         margin-bottom: 10px;
+        margin-top: 15px;
     }
     p {
         font-size: 18px;
@@ -27,6 +36,8 @@
         background: rgb(211, 75, 75);
         color: rgb(255, 255, 255);
         margin-bottom: 20px;
+        border-radius: 20px;
+
         &:hover {
             background: rgb(153, 17, 17);
         }

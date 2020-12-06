@@ -1,5 +1,6 @@
 import React from 'react';
 import Page from './page';
+//import { flexColumn } from './styled.ts';
 
 class SectionPage extends React.Component {
     constructor(props) {
@@ -19,7 +20,9 @@ class SectionPage extends React.Component {
         if (productsArray.length > 0) {
             const filter = productsArray.filter(e => e.id == obj.id);
             if (filter.length > 0) {
-                productsArray.map(e => {
+                let pos;
+                productsArray.map((e, index) => {
+                    let cantProduct = 0;
                     if(e.id == obj.id) {
                         let valorPrice = parseFloat(e.price.substr(1));
                         if (e.count > 1) {
@@ -28,6 +31,17 @@ class SectionPage extends React.Component {
                             this.setState(function (prevState) {
                                 return {
                                     total:prevState.total-valorPrice
+                                }
+                            })
+                        } else {
+                            cantProduct = e.count;
+                            pos = index;
+                            e.count = 1;
+                            productsArray.splice(pos, 1);
+                            this.setState({ ... productsArray });
+                            this.setState(function (prevState) {
+                                return {
+                                    total:prevState.total-(valorPrice*cantProduct)
                                 }
                             })
                         }
@@ -141,7 +155,7 @@ class SectionPage extends React.Component {
 
         return (
             <>
-                <div className="section-page">
+                <div className='section-page'>
                 <Page
                     addProductsHamper={this.addProductsHamper}
                     minusCount={this.minusCount}

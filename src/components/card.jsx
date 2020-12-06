@@ -7,10 +7,11 @@ const Card = (props) => {
     return (
         <article className="card">
             <img src={product.url} alt=""/>
-            <p>{product.nameProduct} {product.descProduct}</p>
+            <p>{product.nameProduct}</p>
+            <p>{product.descProduct}</p>
             <br/>
             <p><b>Código:</b> {product.codeProduct}</p>
-            <p><b>Stock:</b> {product.stock}</p>
+            <p> <b>Stock:</b> {product.stock}</p>
             <br/>
             <p>{product.price}</p>
             <br/>
