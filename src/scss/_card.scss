@@ -1,103 +1,100 @@
 .card {
-    max-width: 300px;
-    color: rgb(95, 92, 85);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 2px solid rgb(128, 121, 121);
-    border-radius: 25px;
-    background: white;
+  max-width: 300px;
+  color: rgb(95, 92, 85);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid rgb(128, 121, 121);
+  border-radius: 25px;
+  background: white;
 
-    :nth-child(2), :nth-child(3) {
-        color: #1661a3;
-        font-size: 20px;
-        align-self: center;
-    }
-    img {
-        align-self: center;
-        width: 90%;
-        margin-bottom: 10px;
-        margin-top: 15px;
-    }
-    p {
-        font-size: 18px;
-        margin: 0 15px 5px 15px;
-    }
-    /* :nth-child(8) {
+  :nth-child(2),
+  :nth-child(3) {
+    color: #1661a3;
+    font-size: 20px;
+    align-self: center;
+  }
+  img {
+    align-self: center;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  p {
+    font-size: 18px;
+    margin: 0 15px 5px 15px;
+  }
+  /* :nth-child(8) {
         align-self: center;
     } */
-    button {
-        align-self: center;
-        font-size: 19px;
-        width: 50%;
-        height: 30px;
-        background: rgb(211, 75, 75);
-        color: rgb(255, 255, 255);
-        margin-bottom: 20px;
-        border-radius: 20px;
+  button {
+    align-self: center;
+    font-size: 19px;
+    width: 50%;
+    height: 30px;
+    background: rgb(211, 75, 75);
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    border-radius: 20px;
 
-        &:hover {
-            background: rgb(153, 17, 17);
-        }
-        &:active {
-            transform: scale(0.95);
-        }
+    &:hover {
+      background: rgb(153, 17, 17);
     }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
 }
 
 // RESPONSIVE
 
 // Móviles en horizontal o tablets en vertical
 
-@media (min-width: 480px) { 
-
+@media (min-width: 480px) {
 }
 
 // Tablets en horizontal
 
-@media (min-width: 768px) { 
-    .card {
-
-        img {
-            align-self: center;
-            width: 90%;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 18px;
-            margin: 0 15px 5px 15px;
-        }
-        /* :nth-child(8) {
+@media (min-width: 768px) {
+  .card {
+    img {
+      align-self: center;
+      width: 90%;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin: 0 15px 5px 15px;
+    }
+    /* :nth-child(8) {
             align-self: center;
         } */
-        button {
-            align-self: center;
-            font-size: 19px;
-            width: 50%;
-            height: 30px;
-            background: rgb(211, 75, 75);
-            color: rgb(255, 255, 255);
-            margin-bottom: 20px;
-            &:hover {
-                background: rgb(153, 17, 17);
-            }
-            &:active {
-                transform: scale(0.95);
-            }
-        }
+    button {
+      align-self: center;
+      font-size: 19px;
+      width: 50%;
+      height: 30px;
+      background: rgb(211, 75, 75);
+      color: rgb(255, 255, 255);
+      margin-bottom: 20px;
+      &:hover {
+        background: rgb(153, 17, 17);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
     }
+  }
 }
 
 // Tablets en horizonal y escritorios normales
 
-@media (min-width: 1024px) { 
-
+@media (min-width: 1024px) {
 }
 
 // Escritorios muy anchos
 
-@media (min-width: 1200px) { 
-
+@media (min-width: 1200px) {
 }
